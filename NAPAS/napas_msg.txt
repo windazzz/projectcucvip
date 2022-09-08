@@ -1,0 +1,54 @@
+Request:
+0268 0200 7ABA448128E0D002 169704093270444826 010000 000010000000 000010000000 0524085210 00000001 537157 155210 0524 052460110210006970468279704093270444826=290150057100000050754500000001AB                                              BNV 704704704DB0B60B3204663F5016AAcB6wDcYKtpWwAA
+
+####:0268|: Tổng số byte
+####:0200|: request
+####:7ABA448128E0D002|: Bitmaps, các trường 1 là có, 0 là không.
+#002:	16|: độ dài số thẻ
+	9704093270444826|: số thẻ
+#003:01.00.00|: mã xử lý
+#004:000010000000|: transaction amount
+#005:000010000000|: settlement amount(số tiền quyết toán)
+#007:05.24.08.52.10|: format MMDDhhmmss: Tháng 05 ngày 24, 8h 52p 10s
+#009: 00000001: Tỉ giá chuyển đổi: 0 phần thập phân, tỉ giá chuyển đổi = 1
+#011: 537157: số lưu vết hệ thống (tạm thời chưa rõ số này ý nghĩa là gì :v )
+#012: 155210: Thời gian giao dịch địa phương: 15h 51p 10s
+#013: 0524: Ngày tháng giao dịch địa phương: MMDD: 24 tháng 5
+#015: 0524: Ngày tháng quyết toán: 24 tháng 5
+#018: 6011: Mã phân loại merchant: 6011 là giao dịch trên ATM
+#022: 021: Chế độ tại điểm truy nhập dịch vụ
+		vị trí 1+2: 02: Số thẻ được lấy trên thông tin của thẻ từ
+		vị trí 3: 1: Thiết bị đầu cuối có khả năng cho phép đọc số PIN			
+#025: 00: Mã điều kiện tại điểm dịch vụ: 00: Giao dịch bình thường,
+		có sự xuất hiện của cả chủ thẻ và thẻ
+#032: 	06: Quy định độ dài phía sau
+	970468: Mã định danh của đơn vị chấp nhận thẻ. 970468 là SeABank
+#035: 	27: Quy định độ dài phía sau
+	9704093270444826: Số thẻ
+	= : Phân cách
+	2901: Ngày hết hạn, YYMM: năm 2029 (chắc thế) tháng 1
+	500: Service code
+	571: 
+#037: 0000 00 507545
+#041: 00000001 : Giá trị xác định thiết bị chấp nhận thẻ
+#042: AB 
+#043:
+#049:
+#050:
+#052:
+#063:
+
+
+
+Response:
+0248|
+0210|
+FABA40010E80C402|
+0000000004000000|
+16|
+9704093270444826|
+010000|
+000010000000|
+000010000000|
+05.24.08.52.10|
+000000015371571552100524052460110697046800000050754535968300000000017047040400002704C0000193437900002704C000019343790016AAcB6wDcYKtpWwAA160000000000000000
